@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Hospital Name</title>
+  <!-- Add your CSS file here for styling -->
+  <link rel="stylesheet" href="style.css">
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const menuIcon = document.querySelector(".menu-icon");
+        const menuItems = document.querySelectorAll("nav ul li");
+
+        menuIcon.addEventListener("click", function() {
+            menuItems.forEach(item => {
+                item.classList.toggle("hidden");
+            });
+        });
+    });
+</script>
+</head>
+
+<body>
+<div class="container"> 
+  <!-- <img class="bar" src="bars-solid.svg" alt="laptop image"> -->
+  <!-- Header section -->
+  <header class="sticky">
+    <img src="bars-solid.svg" alt="Menu" class="menu-icon">
+    <h1>WAJID ALI GENERAL HOSPITAL</h1>
+    <nav>
+        
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#doctors">Doctors</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+  <!-- Hero section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Welcome to  W.A.G.H</h2>
+      <p>We provide exceptional healthcare services for our patients.</p>
+      <a href="#contact" class="btn">Make an Appointment</a>
+    </div>
+  </section>
+
+  <!-- About section -->
+  <section id="about">
+    <div class="about-content">
+      <h2>About Us</h2>
+     <p>
+      
+Welcome to WAJID ALI GENERAL HOSPITAL, where compassionate care meets cutting-edge medicine.
+With a legacy spanning decades, we are a renowned healthcare institution dedicated to
+ providing exceptional medical services and personalized attention to our patients. Our team of skilled and empathetic healthcare professionals, including world-class doctors,
+  nurses, and specialists, is committed to your well-being,
+ ensuring a holistic approach to your healthcare journey. Striving for excellence in diagnosis, treatment, and patient experience, 
+ we combine advanced technology with a human touch to deliver the highest standard of medical care. Your health and comfort are at
+ the heart of everything we do, and we take pride in being a trusted partner in your pursuit of wellness. Welcome to a place where expertise, innovation, and compassion converge – welcome to WAJID ALI GENERAL HOSPITAL.
+     </p>
+  </section>
+
+  <!-- Services section -->
+  <section id="services">
+    <div class="services-content">
+      <h2>Our Services</h2>
+      <ul>
+        <li>General Medicine</li>
+         <p>
+          
+Welcome to our hospital's general medicine department, where our experienced internists provide expert care in the prevention, diagnosis, and non-surgical treatment of adult medical conditions. Our dedicated team of doctors combines advanced diagnostic techniques with a compassionate approach, ensuring comprehensive healthcare tailored to each patient's needs. As primary care physicians, our internists focus on promoting overall well-being, addressing a wide range of health concerns, and coordinating specialized care as required. Trust in our commitment to holistic medical excellence as we work together for your health and vitality.
+         </p>
+        <li>Surgery</li>
+        <p>
+         
+Discover exceptional surgical care at our hospital's cutting-edge surgical department. Our skilled team of surgeons is committed to providing safe and effective surgical solutions across various specialties. With state-of-the-art technology and a patient-centered approach, we ensure precise diagnoses and personalized treatment plans. From minimally invasive procedures to complex surgeries, our dedicated surgeons prioritize your well-being and a swift recovery. Your trust is our greatest asset as we strive to deliver the highest quality surgical care for your health and comfort.
+        </p>
+        <li>Emergency Care</li>
+        <p>
+
+          When every moment counts, rely on our hospital's emergency care services. Our dedicated emergency team is available 24/7 to provide swift and proficient medical attention in critical situations. Equipped with advanced facilities and experienced medical professionals, we deliver rapid assessment, stabilization, and treatment for a wide spectrum of emergencies. Your health and safety are our top priorities, and we are prepared to handle any medical crisis with expertise and compassion. Count on us to be your partner in urgent times, ensuring prompt and high-quality care when you need it the most.
+        </p>
+        <li>Maternity & Pediatrics</li>
+        <p>
+   
+Welcome to our hospital's maternity and pediatrics department, where we celebrate the journey of parenthood with you. Our experienced team of healthcare professionals provides comprehensive and compassionate care for expectant mothers, newborns, and children. From prenatal care to delivery, we prioritize the well-being of both mother and baby, offering a range of services to support a healthy and joyful pregnancy. Our pediatric care extends from infancy to adolescence, focusing on growth, development, and preventive health measures. With a nurturing environment and advanced medical expertise, we are dedicated to nurturing the health and happiness of your growing family every step of the way.
+        </p>
+        <li>Diagnostic Imaging</li>
+        <p>
+          Explore our hospital's state-of-the-art diagnostic imaging services, where precision meets clarity. Our advanced imaging technologies enable our expert radiologists to provide accurate and detailed insights into your health. From X-rays to MRIs and CT scans, we offer a comprehensive range of non-invasive imaging procedures that aid in early detection, precise diagnosis, and personalized treatment planning. Your well-being is our priority, and our commitment to delivering the highest quality imaging results ensures that you receive the care you deserve. Trust in our expertise as we illuminate your path to better health through cutting-edge diagnostic imaging.
+        </p>
+      </ul>
+    </div>
+  </section>
+ 
+  <!-- Doctors section -->
+  <section id="doctors">
+   
+    <h2 class="meetDoctor">Meet Our Doctors</h2>
+   
+    <div class="doctors-content">
+   
+      <ul>
+       <li>NEUROLOGIST</li>
+       <li>CARDIOLOGIST</li>
+       <li>NEPHROLOGIST</li>
+       <li>UROLOGIST</li>
+       <li>PSYCHIATRIST</li>
+       <li>PHYSIOTERAPIST</li>
+       <li>CHILD-SPECIALIST</li>
+       <li>GENERAL PHYSICIANS</li>
+       <li>ORTHOPADIST</li>
+      </ul>
+   
+      <ul>
+        <li>Dr. Muhammad Fazil</li>
+        <li>Dr. Qurutul-Ain</li>
+        <li>Dr. Shuja Khan</li>
+        <li>Dr. Sarim Ahmed</li>
+        <li>Dr. Syeda sara</li>
+        <li>Dr. Arshaad Khan</li>
+        <li>Dr. Saira Ali</li>
+        <li>Dr. Idrees Ali</li>
+        <li>Dr. Ahmed Azhar</li>
+       </ul>
+     
+      <!-- Add doctor profiles and images here -->
+    </div>
+  </section>
+
+  <!-- Contact section -->
+  <section id="contact">
+    <div class="contact-content">
+      <h2>Contact Us</h2>
+      <p>If you have any questions or need to make an appointment, feel free to contact us.</p>
+      <form>
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Submit</button>
+      </form>
+    </div>
+  </section>
+</div> 
+  <!-- Footer section -->
+  <footer>
+    <p>&copy; 2023 WAJID ALI GENERAL HOSPITAL. All rights reserved.</p>
+  </footer>
+
+  <!-- Add your JavaScript file here for additional interactivity -->
+  <script src="scripts.js"></script>
+  
+</body>
+
+</html>
